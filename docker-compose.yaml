@@ -34,13 +34,13 @@ services:
       - ./postgresql:/var/lib/postgresql
       - ./postgresql_data:/var/lib/postgresql/data
 
-  sonarscanner:
-    container_name: sonarscanner
-    image: sonarsource/sonar-scanner-cli
-    networks:
-      - sonarnet
-    volumes:
-      - ./repo:/usr/src
+#   sonarscanner:
+#     container_name: sonarscanner
+#     image: sonarsource/sonar-scanner-cli
+#     networks:
+#       - sonarnet
+#     volumes:
+#       - ./repo:/usr/src
 
 networks:
   sonarnet:
